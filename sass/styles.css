@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #2196fe;
+}
+.navbar .navbar-brand {
+  color: #ffffff;
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+  color: #ffffff;
+}
+.navbar .navbar-collapse {
+  justify-content: center;
+  font-family: "verdana", sans-serif;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+.navbar .navbar-collapse .navbar-nav a {
+  color: #ffffff;
+}/*# sourceMappingURL=styles.css.map */

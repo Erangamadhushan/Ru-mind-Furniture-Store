@@ -1,0 +1,27 @@
+@import './base';
+
+.navbar {
+    background-color:$mainColor;
+    .navbar-brand {
+        color:#ffffff;
+        
+    }
+    .navbar-toggler {
+        .navbar-toggler-icon {
+            color:#ffffff;
+        }
+    }
+    .navbar-collapse {
+        justify-content:center;
+        font : {
+            family:'verdana',sans-serif;
+            weight:normal;
+            size:1.2em;
+        }
+        .navbar-nav {
+            a {
+                color:#ffffff;
+            }
+        }
+    }
+}
