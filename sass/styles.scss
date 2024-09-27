@@ -25,3 +25,60 @@
         }
     }
 }
+.loading {
+    position:fixed;
+    width:100%;
+    height:100vh;
+    top: 0;
+    left: 0;
+    background:#fff url('../gif/loading.gif') no-repeat center center;
+    background-size:10%;
+}
+@mixin btn-property($backgroundColor, $color) {
+    background-color: $backgroundColor;
+    color:$color;
+    border-radius:0.75em;
+    border:none;
+    padding:0.75em;
+    transition:all .3s;
+}
+@mixin btn-outline-property($backgroundColor, $color) {
+    background-color: $backgroundColor;
+    color:$color;
+    border-radius:0.75em;
+    border:1px solid $color;
+    padding:0.75em;
+    transition:all .3s;
+}
+.btn-main {
+    @include btn-property($mainColor, #ffffff);
+    max-width:250px;
+}
+.btn-outline-main {
+    @include btn-outline-property(#ffffff, $mainColor);
+    max-width: 250px;
+    &:hover {
+        @include btn-outline-property($mainColor, #ffffff);
+    }
+}
+ 
+
+.main_heading_section {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    padding:25px;
+    h2 {
+        color:$mainColor;
+        font: {
+            size:5em;
+            weight:650;
+        }
+        
+    }
+    p {
+        font-size:1.2em;
+    }
+}
+
+
