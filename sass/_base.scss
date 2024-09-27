@@ -5,9 +5,14 @@ $mainHeading : #2196fe;
 $mainContent : #d75d06;;
 
 $lineHeading : #2196fe;
-$lineContent : #d75d06;;
+$lineContent : #d75d06;
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+}
+
+img {
+    position:relative;
+    max-width:100%;
 }
