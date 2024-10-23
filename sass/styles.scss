@@ -1,9 +1,9 @@
 @import './base';
 
 .navbar {
-    background-color:$mainColor;
+    background-color:transparent;
     .navbar-brand {
-        color:#ffffff;
+        color:#000;
         
     }
     .navbar-toggler {
@@ -20,7 +20,10 @@
         }
         .navbar-nav {
             a {
-                color:#ffffff;
+                color:#000;
+            }
+            &.active {
+               text-decoration: underline; 
             }
         }
     }
@@ -80,5 +83,88 @@
         font-size:1.2em;
     }
 }
+.main_pic {
+    background-image:url('../images/home.jpg');
+    min-height:100vh;
+    background-size:cover;
+}
+.main_pic  {
+    .container {
+        .main {
+            h1 {
+                font: {
+                    size:72px;
+                    weight:800;
+                }
+                span {
+                    color:rgb(0, 136, 255);
+                }
+            }
+        }
+        
+        .search_bar {
+            display:flex;
+            justify-content:center;
+            input {
+                width:80%;
+                margin:auto;
+                border:none;
+                border-radius:1.5em;
+                padding:10px;
+                padding-inline:2em;
+                :focus {
+                    border:lime;
+                }
+            }
+            
+        }
+        
+    }
+    
+}
 
+.direct_section {
+    .container-fluid {
+        .row {
+            gap:40px;
+            .direct_item {
+                border-radius:.8em;
+                background-color:#e4f3ff;
+                text-align:center;
+            }
+        }
+    }
+}
+
+.bestseller {
+    .row {
+        .card {
+            display:flex;
+            flex-direction:column;
+            align-content:space-between;
+            border:none;
+            .card-img-top img{
+                -webkit-aspect-ration:16/9;
+            }
+            .card-body {
+                p {
+                    padding-top:1.2em;
+                    text-align:center;
+                }
+            }
+        }
+
+    }
+}
+
+.container {
+    .row {
+        .items {
+            img {
+                width:100%;
+                object-fit:cover;
+            }
+        }
+    }
+}
 

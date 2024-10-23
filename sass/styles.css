@@ -10,10 +10,10 @@ img {
 }
 
 .navbar {
-  background-color: #2196fe;
+  background-color: transparent;
 }
 .navbar .navbar-brand {
-  color: #ffffff;
+  color: #000;
 }
 .navbar .navbar-toggler .navbar-toggler-icon {
   color: #ffffff;
@@ -25,7 +25,10 @@ img {
   font-size: 1.2em;
 }
 .navbar .navbar-collapse .navbar-nav a {
-  color: #ffffff;
+  color: #000;
+}
+.navbar .navbar-collapse .navbar-nav.active {
+  text-decoration: underline;
 }
 
 .loading {
@@ -79,4 +82,61 @@ img {
 }
 .main_heading_section p {
   font-size: 1.2em;
+}
+
+.main_pic {
+  background-image: url("../images/home.jpg");
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.main_pic .container .main h1 {
+  font-size: 72px;
+  font-weight: 800;
+}
+.main_pic .container .main h1 span {
+  color: rgb(0, 136, 255);
+}
+.main_pic .container .search_bar {
+  display: flex;
+  justify-content: center;
+}
+.main_pic .container .search_bar input {
+  width: 80%;
+  margin: auto;
+  border: none;
+  border-radius: 1.5em;
+  padding: 10px;
+  padding-inline: 2em;
+}
+.main_pic .container .search_bar input :focus {
+  border: lime;
+}
+
+.direct_section .container-fluid .row {
+  gap: 40px;
+}
+.direct_section .container-fluid .row .direct_item {
+  border-radius: 0.8em;
+  background-color: #e4f3ff;
+  text-align: center;
+}
+
+.bestseller .row .card {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  border: none;
+}
+.bestseller .row .card .card-img-top img {
+  -webkit-aspect-ration: 16/9;
+}
+.bestseller .row .card .card-body p {
+  padding-top: 1.2em;
+  text-align: center;
+}
+
+.container .row .items img {
+  width: 100%;
+  object-fit: cover;
 }/*# sourceMappingURL=styles.css.map */
