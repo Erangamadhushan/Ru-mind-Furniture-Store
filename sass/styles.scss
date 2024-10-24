@@ -21,6 +21,9 @@
         .navbar-nav {
             a {
                 color:#000;
+                &:hover {
+                    border-bottom:3px solid #2196fe;
+                }
             }
             &.active {
                text-decoration: underline; 

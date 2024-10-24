@@ -27,6 +27,9 @@ img {
 .navbar .navbar-collapse .navbar-nav a {
   color: #000;
 }
+.navbar .navbar-collapse .navbar-nav a:hover {
+  border-bottom: 3px solid #2196fe;
+}
 .navbar .navbar-collapse .navbar-nav.active {
   text-decoration: underline;
 }
