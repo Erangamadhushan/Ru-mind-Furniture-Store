@@ -27,6 +27,9 @@ img {
 .navbar .navbar-collapse .navbar-nav a {
   color: #000;
 }
+.navbar .navbar-collapse .navbar-nav a:hover {
+  border-bottom: 3px solid #2196fe;
+}
 .navbar .navbar-collapse .navbar-nav.active {
   text-decoration: underline;
 }
@@ -136,7 +139,45 @@ img {
   text-align: center;
 }
 
-.container .row .items img {
+.container .row .items {
+  position: relative;
+  margin-bottom: 20px;
+}
+.container .row .items .item_image {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.container .row .items .item_image img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+.container .row .items .item_description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  display: none;
+  text-align: center;
+  transition: all 5s ease-in-out;
+  font-size: 1.1em;
+}
+.container .row .items:hover .item_image {
+  opacity: 0.5;
+}
+.container .row .items:hover .item_description {
+  display: block;
+}
+
+.community {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 1001;
 }/*# sourceMappingURL=styles.css.map */
