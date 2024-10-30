@@ -18,4 +18,8 @@ const observer = new IntersectionObserver((entries,observer) =>{
 let animate_images = document.querySelectorAll('.anime__animated');
 animate_images.forEach((animate_image)=>{
     observer.observe(animate_image);
+});
+
+document.querySelector('#submit').addEventListener('click', () => {
+   console.log("hello");
 })

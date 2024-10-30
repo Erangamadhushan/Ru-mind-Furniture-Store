@@ -180,4 +180,8 @@ img {
   right: 10px;
   bottom: 10px;
   z-index: 1001;
+}
+
+.main_item {
+  background-color: #212222;
 }/*# sourceMappingURL=styles.css.map */
